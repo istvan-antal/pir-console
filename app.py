@@ -8,7 +8,7 @@ pin_number=7
 GPIO.setup(pin_number, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 
 def motion_sense(pir_pin):
-    print "Motion detected: " + pir_pin
+    print "Motion detected: " + str(pir_pin)
 
 try:
     GPIO.add_event_detect(pin_number, GPIO.RISING, callback=motion_sense)
