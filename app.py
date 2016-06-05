@@ -8,7 +8,7 @@ pin_number=7
 
 GPIO.setup(pin_number, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 
-def motion_sense():
+def motion_sense(pir_pin):
     print datetime.datetime.utcnow() +  " Motion detected"
 
 try:
